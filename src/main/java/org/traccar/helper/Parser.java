@@ -179,11 +179,11 @@ public class Parser {
                 break;
             case DEG_MIN_MIN:
                 coordinate = nextInt(0);
-                coordinate += Double.parseDouble(next() + '.' + next()) / 60;
+                coordinate += Double.parseDouble(next() + '.' + next()) / 100;
                 break;
             case DEG_MIN_MIN_HEM:
                 coordinate = nextInt(0);
-                coordinate += Double.parseDouble(next() + '.' + next()) / 60;
+                coordinate += Double.parseDouble(next() + '.' + next()) /60;
                 hemisphere = next();
                 break;
             case HEM_DEG:
